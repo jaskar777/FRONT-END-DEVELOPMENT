@@ -1,0 +1,18 @@
+h1{
+    color:red;
+}
+
+h2{
+    color: black;
+}
+.one{
+    color: yellow ;
+}
+#two{
+    color: violet;
+}
+
+*{
+    color: brown;
+     
+}
