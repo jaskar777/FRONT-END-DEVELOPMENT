@@ -97,3 +97,32 @@ if (false  ) {
 else {
     console.log("not take umbrella");
 }
+
+console.log(false && false);//false 
+console.log(false || false);
+console.log(true || false);
+
+console.log(!true);
+ 
+var color = "green";
+if (color == "red") {
+    console.log("stop");
+}
+else if (color == "green") {
+    console.log("go")
+}
+else {
+    console.log("wait");
+}
+ 
+let arr = [1, 2, 3, 3, 4];
+for (let i in  arr) {
+    console.log(i);
+}
+
+for (let i = 0; i <= 5; i++){
+    console.log("apple");
+}
+for (let a = 1; a <= 10; a += 2){
+    console.log(a);
+}
