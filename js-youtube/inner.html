@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="inner"></div>
+    <div id="text"></div>
+
+    <script>
+        var head1=document.getElementById("inner");
+        head1.innerHTML="<h1>Hello</h1>";
+
+
+        var head2=document.getElementById("text");
+        head2.textContent="<h1>Hello text content not work</h1>";
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputs">
+    <button onclick="add()">Add</button>
+    <ul id="listorder">
+        <li>Hello 
+            <button onclick="remove(event)">Delete</button>
+        </li>
+    </ul>
+
+    <script>
+
+        var list = document.getElementById("listorder");
+        var ins=document.getElementById("inputs")
+        function add(){
+
+            var listitem=document.createElement("li");
+            //listitem.textContent="hello";
+            //listitem.textContent=ins.value;
+            listitem.innerHTML=ins.value + "<button onclick='remove(event)'>Delete</button>"
+            list.append(listitem);
+
+        }
+
+        function remove(event){
+          //  event.target.remove(); remove button 
+          event.target.parentElement.remove();
+        }
+    </script>
+</body>
+</html>
