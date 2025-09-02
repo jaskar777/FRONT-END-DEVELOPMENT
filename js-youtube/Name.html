@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 id="result">Name</h1>
+    <button onclick="update(event)">Jaskar</button>
+    <button onclick="update(event)">John</button>
+    <button onclick="update(event)">Dog</button>
+
+    <script>
+        var heading=document.getElementById("result");
+
+        function update(event){
+            heading.textContent=event.target.textContent;
+        }
+
+        
+    </script>
 </body>
 </html>
