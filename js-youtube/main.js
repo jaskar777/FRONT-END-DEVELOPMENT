@@ -126,3 +126,8 @@ for (let i = 0; i <= 5; i++){
 for (let a = 1; a <= 10; a += 2){
     console.log(a);
 }
+
+var r1 = Math.random();
+console.log(r1 * 100);
+
+console.log(Math.floor(4.99))
