@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one">Hello</p>
+    <h1 id="two">jaskar</h1>
+
+    <h2 id="three">what program</h2>
+    <button onclick="change()">change</button>
+    <script>
+        var para = document.getElementById("one");
+        console.log(para.textContent);
+
+        para.textContent="bye";
+        console.log(para);
+
+        var heading=document.getElementById("two");
+        heading.textContent="bye jaskar";
+
+
+
+        function change(){
+            var program=document.getElementById("three");
+            program.textContent="javascript program";
+        }
+    </script>
+</body>
+</html>
