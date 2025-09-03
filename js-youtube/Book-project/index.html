@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bookstore</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Wings of fire</h2>
+            <h4>Dr.Apj.Abdul kalam</h4>
+            <p>🔥 “Wings of Fire” is an inspiring autobiography of Dr. A.P.J. Abdul Kalam, former President of India and one of the country’s greatest scientists. The book narrates his journey from a humble childhood in Rameswaram to becoming a leading aerospace scientist and the ‘Missile Man of India’.‘Wings of Fire’ continues to ignite the minds of readers, especially the youth, encouraging them to dream big and achieve their goals with dedication. 🔥</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay">
+    </div>
+
+
+    <div class="pop-box">
+        <h2>Add Book</h2>
+        <form >
+            <input type="text" name="book" id="book-title" placeholder="Book title">
+            <input type="text" placeholder="Book Author" id="book-author">
+            <textarea placeholder="Description" id="book-desc"></textarea>
+            <button id="add-book">Add</button>
+            <button id="add-cancel">Cancel</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup">+</button>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
