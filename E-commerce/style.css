@@ -1,0 +1,82 @@
+body{
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .heading{
+    font-size: 40px;
+    padding-left: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 60px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+.navbar-links a:hover{
+    color:black;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    
+}
+
+/*side navbar*/
+.side-navbar{
+    background-color:violet;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color:black;
+    display: none;
+}
+
+
+.side-nav-para{
+    margin-bottom: 40px;
+}
+
+.side-navbar-links a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.side-navbar-links a:hover{
+    color: black;
+}
