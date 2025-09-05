@@ -41,13 +41,23 @@ body{
     display: none;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:700px) {
 
     .navbar-menu-toggle{
         display: block;
     }
     .navbar-links{
         display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container{
+        display: none;
+    }
+
+    .service-container1{
+        flex-direction: column;
     }
     
 }
@@ -59,10 +69,11 @@ body{
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left:0;
     padding: 10px;
     color:black;
-    display: none;
+    transition: 1s;
+    
 }
 
 
@@ -79,4 +90,71 @@ body{
 
 .side-navbar-links a:hover{
     color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.header-button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(33, 1, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.service{
+    padding: 20px;
+}
+.service-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container1 div{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.service-container1 h4{
+    text-align: center;
+}
+.service-container1 p{
+    margin-top: 5px;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button{
+    padding: 5px 10px;
+    color: rgb(33, 1, 1);
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    border-radius: 10px;
+    border: none;
+
+
 }
