@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .one{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            /*default position is static 
+            u cannot use left,right,top,bottom position
+            */
+            position:static;
+        }
+            
+            
+        .two{
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            z-index: 3;
+        }
+        .three{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position:relative;
+            z-index: 2;
+
+        }
+    </style>
+</head>
+<body>
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+</body>
+</html>
